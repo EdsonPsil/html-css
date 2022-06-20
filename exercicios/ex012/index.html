@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos com HTML5</title>
+</head>
+<body>
+  <h1>inserindo videos hospedados localmente</h1>
+ <!-- <p>Este vídeo está hospedado em meu próprio servidor</p>
+  <video width="300"  src="midia/meu-video.mp4" controls></video>
+  <video src="midia/meu-video.ogv" width="400" controls></video>
+  <video width="200" controls src="midia/meu-video.ogv"></video>-->
+  <!--o ideal é postar da forma completa conforme abaixo para evitar de incompatibilidade com algum navegador-->
+  <video Width="560" controls poster="midia/foto g.png" loop >
+    <source src="midia/meu-mideo.webm" type="video/webm">
+    <source src="midia/meu-video.m4v" type="video/mp4">
+    <source src="midia/meu-video.mp4" type="video/mp4">
+    <source src="midia/meu-video.ogv" type="video/ogg">
+    <p>Seu navegador não suporta o formato do vídeo</p>
+  </video>
+  <video width="50%" src="midia/pexels-宇航-钱-7936183.mp4" controls></video>
+  <!--da forma acima com os videos hospedados localmente o site fica muito pesado dependendo do número de acesso-->
+</video>
+<h1>Inserindo vídeos do Youtube</h1>
+<iframe width="500" height="300" src="https://www.youtube.com/embed/DIraePpIAog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen ></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gGfg1pZjs_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture," allowfullscreen></iframe>
+  
+</body>
+</html>

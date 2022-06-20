@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* cores da paleta
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+/* ou crie variaveis com o elemento. 
+:root{}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'android';
+  src: url('idroid.otf');
+  font-weight: normal;
+}
+
+/* variáveis criadas com a função root*/
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+
+  --font-patrao: arial, verdana, helvetica, sans-serif;
+  --font-dest: 'bebas neue', cursive;
+  --font-android: 'android', cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--cor0);
+  font-family: var(--font-patrao);
+}
+a.externo::after{
+  content: '\00a0\1f517';
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  background-color: var(--cor4);
+  min-height: 160px; /* configura a altura da caixa*/
+  padding-top: 40px; /* afasta o texto da parte de cima*/
+  text-align: center; /* centraliza o h1 ou p*/
+}
+
+header > h1 {
+  font-family: var(--font-dest);
+  margin-bottom: 20px; /* afasta o h1 do paragrafo <p> de baixo*/
+  font-size: 3em;
+  font-weight: normal;
+  color: white;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.267); /*configura sombra no texto*/
+}
+header p {
+  font-family: var(--font-patrao);
+  color: white;
+  font-size: 1.2em;
+  max-width: 700px; /*configura com quantos pixel a página vai quebrar*/
+  padding-left: 10px; /*Afasta o texto da margem do lado esquerdo */
+  padding-right: 10px; /*Afasta o texto da margem do lado direito */
+  margin: auto; /*ajusta o texto no centro quando tem um max-width*/
+  margin-bottom: 20px; /* ajusta o parágrafo afastando da parte de baixo*/
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.267);/*configura sombra na caixa*/
+  text-align:center ;
+
+}
+
+nav {
+  background-color: var(--cor5);
+  padding: 10px;
+
+}
+nav > a {
+  color: var(--cor1);
+  padding: 8px; /* afasta os textos*/
+  border-radius: 5px;/* configura o arredondmento das bordas da caixa*/ 
+  text-decoration: none; /*retira o sublinhado do texto*/
+  font-weight: bold; /*para colocar a fonte em negrito*/
+  /* opcional*/transition-duration: .3s;/*configura a duração do tempo para aparecer a caixa*/
+}
+/*Comando para mudar a cor da caixa quando passar o mouse em cima*/
+nav > a:hover{
+  background-color: #2fa866;/*muda a cor da caixa*/
+  color: #063d1e;/*muda a cor da letra */
+}
+
+main h1 {
+  color: var(--cor5);
+  font-family: var(--font-android);
+  font-weight: normal;
+  font-size: 2em;
+  padding: 10px;
+}
+main h2 {
+  color: #063d1e;
+  font-family: var(--font-android);
+  font-weight: normal;
+  background-image: linear-gradient(to right, var(--cor3), transparent);
+  text-indent: 5px;
+}
+main h3 {
+  font-family: var(--font-android);
+  color: #063d1e;
+}
+main {
+  background-color: whitesmoke;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px  rgba(0, 0, 0, 0.068);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main p{
+  margin: 15px 0px; /* cria margem em volta da caixa do parágrafo*/
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+main strong{
+  color: var(--cor4);
+ 
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+ main a{
+   color: rgb(49, 6, 241);
+ }
+ 
+main img {
+  width: 100%;
+}
+main img.pequena {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+div.video{
+  background-color: var(--cor5);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 58.5%;
+  background-image: linear-gradient(to top, var(--cor5), var(--cor0));
+
+  position: relative;
+}
+
+div.video > iframe{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+
+}
+
+
+aside {
+  background-color: var(--cor2);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+
+}
+
+aside > h3{
+  font-family: var(--font-patrao);
+  color: white;
+  background-color: var(--cor3);
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+ 
+}
+
+aside > ul {
+  list-style-position: inside;/*joga a lista para dentro da caixa da tag*/
+  columns: 2; /*divide a lista na qtde de colunas desejada*/
+  list-style-type:'\2714\00a0\00a0' ;
+
+}
+
+
+footer {
+  background-color: var(--cor5);
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  
+}
+footer  a{
+  color: var(--cor2);
+  text-decoration: none;
+}
+footer a:hover{
+  color: #83e1ad;
+  text-decoration: underline;
+}
+
+

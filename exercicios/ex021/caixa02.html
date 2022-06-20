@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Groupng tags</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+      header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 10px 20px 20px;//** esse parametro arredonda a borda da caixa**/
+      }
+
+      main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+      }
+
+      article{
+        background-color: rgb(163, 159, 159);
+      }
+
+      article > aside {
+background-color: rgb(107, 103, 103);
+      }
+
+      footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+      }
+
+      footer > p{
+        margin: 0px;
+      }
+      nav{
+        background-color: rgb(102,102,102);
+        padding: 3px;
+        box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.479); /** para colocar sombra pode alterar as configuações do box-shadow na ferrament no dev tools**/
+       
+     
+      }
+      nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+      }
+      h1{
+        color: darkblue;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <nav>
+      <a href="tipos_caixas.html">Tipos de caixa</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+
+    </nav>
+  </header>
+  <main>
+<section id= 'assuntos'>
+  <p>Esporte Política e tecnologia</p>
+</section>
+
+<section id='noticias'>
+  <article>
+    <h2>Notícias sobre o Brasil</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ea? Amet ea nesciunt quibusdam vel voluptatibus. Ipsa, vel rerum repellendus nam sunt adipisci quibusdam rem voluptatem minus esse at voluptatum.</p>
+    <aside>
+      Artigo escrito por Jose da Silva
+    </aside>
+  </article>
+
+</section>
+  </main>
+
+<footer>
+<p>Desenvolvido por curso em video</p>
+</footer>
+  
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario parte1</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="funcao.js"></script>
+
+</head>
+
+<body>
+<section id="corpo-full">
+  <articcle id="notica-principal">
+    <header>
+      <div id="cabecalho">
+        <h3>Fale conosco > contato</h3>
+        <h1>Formulario de contato</h1>
+       <p class="direita">Atualizado em 30/04/2022 </p>
+       
+      </div>
+    </header>
+    <form id="fcontato" method="post" oninput="calc_total();">
+      <fieldset id="usuario">
+        <legend>Identificação do usuário</legend>
+          <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
+          <p><label for="cNasc">Data de nascimento:</label><input type="date" name="tnasc" id="cNasc"></p>
+          <p><label for="email">E-mail:</label><input type="email" name="temail" id="email" size="20" maxlength="30"></p>
+        <fieldset id="sexo"> 
+        <legend>Sexo:</legend>
+          <p id="psexo">
+            <label for="masc"> Masculino</label><input type="radio" name="tsexo" id="masc">
+            <label for="fem">Feminino</label><input type="radio" name="tsexo" id="fem">
+          </p>
+        </fieldset>
+          <p><label for="senha">Senha:</label><input type="password" name="tsenha" id="senha" size="6" maxlength="8" placeholder="8 Dígitos"></p>   
+      </fieldset>
+      <fieldset id="endereco">
+          <legend>Endereço do usuário</legend>
+         <p><label for="logr">Logradouro:</label><input type="text" name="tlogr" id="logr" size="30" maxlength="40" placeholder="Ex.: Av, Rua, Trav..." ></p>
+         <p><label for="num">Número:</label><input type="number" name="tnum" id="num" size="6" maxlength="10"></p>
+         <p><label for="cid">Cidade:</label><input type="text" name="tcid" id="cid" size="30" maxlength="40" placeholder="Nome da cidade" list="cidades"></p>
+         <datalist id="cidades">
+           <option value="Rio de Janeiro"></option>
+           <option value="Nova Iguaçu"></option>
+           <option value="Belford Roxo"></option>
+           <option value="São Gonçalo"></option>
+         </datalist>
+         <p><label for="est">Estado:</label>
+         <select name="test" id="est">]
+           <option value="RN">Rio Grande do Norte</option>p
+           <option selected value="RJ">Rio de Janeiro</option> 
+           <option value="SP">São Paulo</option>
+           <option value="SC">Santa Catarina</option>
+           <option value="PR">Paraná</option>
+           <option value="RS">Rio Grande do Sul</option>
+         </select></p>
+      </fieldset>
+      <fieldset id="mensagem">
+        <Legend>Mensagem do usuário</Legend>
+        <p><label for="grau">Grau de urgência:</label>    Mín.
+        <input type="range" name="gurg" id="grau" min="0" max="10" step=".5">Máx.</p>
+        <p id="tmsg"><label for="msg">Mensagem:</label> </p>
+        <textarea name="ctexto" id="cxt" cols="45" rows="5" maxlength="100"></textarea>
+       
+      </fieldset>
+      <fieldset id="pedido">
+        <legend>Quero um Google Glass</legend>
+        <p><input type="checkbox" name="cped" id="ped">
+          <label for="ped">Gostaria de adquirir um Google Glass quanddo disponível.</label></p>
+        <p><label for="cor">Cor:</label>
+          <input type="color" name="tcor" id="cor" value="#0000ff"></p>
+        <p><label for="cQtd">Quantidade:</label><input type="number" name="tqtde" id="cQtd" min="0" max="5" value="0"></p>
+        <P><label for="preco">Preço total:</label><input type="text" name="tpreco" id="preco" readonly ></P>
+
+      </fieldset>
+      <input id="botao" type="submit" value="Enviar">
+    </form>
+  </articcle>
+</section>
+<footer>
+  <p>Criado por epsil</p>
+</footer>
+</body>
+
+</html>
