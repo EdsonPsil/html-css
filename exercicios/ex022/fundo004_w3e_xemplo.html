@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posicionamento</title>
+  <style>
+    body{
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .imagem{
+      height: 500px;
+      border: 2px dashed black;
+      background-image:url('imagens/wallpaper002.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:center;
+      background-color: aqua;
+      position: relative;
+      
+    }
+    .texto{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="imagem">
+    <div class="texto">
+      <h1 style="font-size:50px">Imagem de fundo</h1>
+      <h3>Avião passando ao fundo</h3>
+      <button>clique</button>
+
+    </div>
+
+  </div>
+  <p>Conteudo da pagina</p>
+<p>Observe que essa técnica também tornará a imagem responsiva: Redimensione a janela do navegador para ver o efeito.</p>
+<p>Para centralizar o conteudo da div.texto deve-se utilizar o position; relative na div mae e absolute na div fila acompanhado do top50% left50% e transform: translate(-50%, -50%)  </p>
+  
+  
+</body>
+</html>
