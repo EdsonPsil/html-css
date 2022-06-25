@@ -4,28 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ex005 fundos</title>
+  <title>Ex005 fundofixo</title>
   <style>
     body{
-      background-color: black;
-      background-image: url(imagens/wallpaper002.jpg);
-      background-repeat: repeat;
-      background-size: cover;
       height: 100vh;
+     /* background-color: black;
+      background-image: url(imagens/wallpaper002.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;*/
+
+      /* shorthand background*/
+
+      background: black url(imagens/wallpaper002.jpg) center center  no-repeat  fixed;
+      background-size: cover;
      
     }
     main{
       background-color: white;
-      width: 400px;
+      max-width: 400px;
       margin: auto;
       padding: 20px;
-      
+      border: 2px solid rgba(32, 32, 177, 0.178); 
+      font-family: arial,sans-serif
+    }
+    h2{
+      color: red;
+      margin: auto;
+      text-align: center;
+      font-size: 50px;
+    }
+    .atencao{
+      color: red;
     }
   </style>
 </head>
 <body>
   <main>
-    <h3>Se o testo for muito grande a imagem não acompanha</h3>
+    <h2>Observações</h2>
+    <h3>Se o texto for muito grande a imagem não acompanha <br/> Para corrigir este problema a propriedade background-attachment com o atributo fixed, fará com que a imagem de fundo não se mova</h3>
+    <h3>opção de shorthand do background</h3>
+    <h4>sequencia a seguir: <br/> color > image > position > repeat > [size] > attachment</h4>
+   <h4 class="atencao">atenção: a opção size não funciona no shorthand apesar de estar descrita na especificação do W3C </h4>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet reprehenderit, ipsum hic dignissimos minima molestiae in corrupti. Eius, impedit consequatur officiis sed cum nisi temporibus deleniti neque minus. Cupiditate, pariatur.</p>
   </main>
   
