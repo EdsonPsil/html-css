@@ -6,100 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabelas</title>
-<style>
-  *{
-    margin: 0px;
-    padding: 0px;
-  }
-  body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
-    position: relative;
-  
-  }
-  header{
-    background-color: darkgray;
-    padding: 15px;
-    text-align: center;
-    margin-left: -2%;
-    position: fixed;
-    width: 100vw;
-    z-index: 1;  
-  }
-  
-  .dicas{
-    width: 400px;
-    height: 600px;
-    border: 1px solid black;
-    position: absolute;
-    left: 520px;
-    top: 87px;
-    padding-left: 10px;
-  }
-  .dicas h1{
-    color: red;
-  }
+  <link rel="stylesheet" href="tb002.css">
 
-  textarea{
-  width:390px;
-  font-size: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 10px;
-  }
-  table{
-    width: 500px;
-    border-collapse: collapse;
-    position:relative;
-    top: 88px;
-    margin-bottom: 100px;
- 
-    
-  }
-  caption{
-    background-color: cadetblue;
-    padding: 10px;
-    font-size: 1.3em;
-    font-weight: bolder;
-    border: 1px solid black;
-    border-bottom: none;
-  }
-  tbody tr:nth-child(2n){
-    background-color: rgb(204, 204, 236)
-
-  }
-  td, th{
-    border: 1px solid black;
-    padding: 10px;
-  }
-
-  thead tr th  {
-    position: sticky;
-    top: 66px;
-    background-color:rgb(243, 233, 233) ;
-  }
-  thead, tfoot{
-    background-color: rgb(243, 233, 233);
-    color:black;
-  }
-  img{
-    width: 30px;
-  }
-  a{
-    padding-left: 10px;
-    text-decoration: none;
-  }
-  a:hover{
-    text-decoration: underline;
-  }
-  .pos{
-    text-align: center;
-  }
-  .p{
-    width: 400px;
-
-  }
- 
-</style>
 </head>
 
 <body>
@@ -117,213 +25,214 @@
     TFOOT 
       TR, TD, TH 
     OBS: TH é usado para titulos-->
-    <div class="contain">
-      <div class="dicas">
-        <h1 style="text-align: center;">Dicas</h1> 
-        
-          <textarea name="ctexto" id="ctexto" cols="30" rows="10">EFEITOS ZEBRADOS EM TABELAS
-
-pode ser feito com a pseudo-classe nth-child conforme abaixo:
-tbody tr:nth-child(elemento) 
-
-Os elementos podem ser:
-(odd) ou (2n+1)  Representa elementos cuja posição numérica em uma série de irmãos seja ímpar: 1, 3, 5, etc.
-
-(even) ou (2n)  Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc. 
-          </textarea>
-         
-
-        </p>
+    <section class="max-contain">
+      <div class="contain">
+        <div class="dicas">
+          <h1 style="text-align: center;">Dicas</h1>
+      
+            <textarea name="ctexto" id="ctexto" cols="30" rows="10">EFEITOS ZEBRADOS EM TABELAS
+      
+      pode ser feito com a pseudo-classe nth-child conforme abaixo:
+      tbody tr:nth-child(elemento) 
+      
+      Os elementos podem ser:
+      (odd) ou (2n+1)  Representa elementos cuja posição numérica em uma série de irmãos seja ímpar: 1, 3, 5, etc.
+      
+      (even) ou (2n)  Representa elementos cuja posição numérica em uma série de irmãos seja par: 2, 4, 6, etc.
+            </textarea>
+      
+      
+        </div>
       </div>
-    </div>
-  <table>
-    <caption>População das unidades federativas</caption>
-    <thead>
-      <tr>
-        <th scope="col">Posição</th><!-- neste caso o TH o dado está na coluna -->
-        <th scope="col">Estado</th>
-        <th scope="col" style="width:100px;">População</th><!-- podemos tambem fazer configuração de CSS diretamente na tag-->
-        <th scope="col">Mudança</th>
-      </tr> 
-    </thead>
-
-    <tbody>
-      <tr>
-        <td class="pos">1</td>
-        <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira dp estado de são Paulo"><a href="https://www.saopaulo.sp.gov.br/" target="_blank">São Paulo</a></td>
-        <td class="num">45.919.049</td>
-        <td>+13.05%</td>
-      </tr>
-      <tr>
-        <td class="pos">2</td>
-        <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt=""><a href="https://www.mg.gov.br/" target="_blank"> Minas Gerais</a></td>
-        <td class="num">21.168.791</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td class="pos">3</td>
-        <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png"> Rio de janeiro</td>
-        <td class="num">17.264.943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td class="pos">4</td>
-        <td>Bahia</td>
-        <td>14.873.064</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td class="pos">5</td>
-        <td>Paraná</td>
-        <td>11.433.957</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Rio Grande do sul</td>
-        <td class="num">11.377.239</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>20</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>21</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>22</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>23</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>24</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>25</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>26</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-      <tr>
-        <td>27</td>
-        <td>Rio de janeiro</td>
-        <td>17 264 943</td>
-        <td>0000%</td>
-      </tr>
-    </tbody>
-
-    <tfoot>
-      <td></td>
-       <th scope="row">Total de habitantes</th><!-- neste caso o TH o dado está na mesma linha -->
-      <td>0000</td>
-    </tfoot>
-  </table>
-  <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
-  <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
-  <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
-  <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
-  
+        <table>
+      <caption>População das unidades federativas</caption>
+      <thead>
+        <tr>
+          <th scope="col">Posição</th><!-- neste caso o TH o dado está na coluna -->
+          <th scope="col">Estado</th>
+          <th scope="col" style="width:100px;">População</th><!-- podemos tambem fazer configuração de CSS diretamente na tag-->
+          <th scope="col">Mudança</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pos">1</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira dp estado de são Paulo"><a href="https://www.saopaulo.sp.gov.br/" target="_blank">São Paulo</a></td>
+          <td class="num">45.919.049</td>
+          <td>+13.05%</td>
+        </tr>
+        <tr>
+          <td class="pos">2</td>
+          <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt=""><a href="https://www.mg.gov.br/" target="_blank"> Minas Gerais</a></td>
+          <td class="num">21.168.791</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td class="pos">3</td>
+          <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png"> Rio de janeiro</td>
+          <td class="num">17.264.943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td class="pos">4</td>
+          <td>Bahia</td>
+          <td>14.873.064</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td class="pos">5</td>
+          <td>Paraná</td>
+          <td>11.433.957</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Rio Grande do sul</td>
+          <td class="num">11.377.239</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Rio de janeiro</td>
+          <td>17 264 943</td>
+          <td>0000%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+         <th scope="row">Total de habitantes</th><!-- neste caso o TH o dado está na mesma linha -->
+        <td>0000</td>
+      </tfoot>
+        </table>
+    </section>
+  <footer>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem officiis eligendi vero iusto voluptas voluptatibus dolore porro nisi adipisci ex itaque, inventore facilis quod at fugit pariatur dolores similique aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nisi dicta eius necessitatibus, laborum tenetur aperiam debitis maxime minima atque animi accusamus illum! Libero, fugiat. Assumenda illum cumque sit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reprehenderit sit ut nulla, sed ullam? Quae autem nihil eveniet velit aliquam expedita, rem, fugiat, laboriosam nam necessitatibus ab similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus beatae pariatur voluptatem et ut dignissimos corporis, doloremque recusandae labore sapiente dicta sunt reiciendis similique modi non dolorem. Obcaecati, non beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ex maxime natus illum quisquam omnis blanditiis sequi nam veritatis provident sit, molestias fugiat ab beatae. Commodi cupiditate accusamus suscipit ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem, voluptates similique odit blanditiis deserunt. Non, consectetur? Reprehenderit odio voluptate nemo itaque ad impedit minus, a ex animi beatae laudantium.</p>
+    
+  </footer>
 
 
 </body>

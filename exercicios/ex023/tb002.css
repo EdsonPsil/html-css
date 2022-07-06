@@ -1,0 +1,101 @@
+*{
+   margin: 0px;
+   padding: 0px;
+ }
+ body{
+   font-family: Arial, Helvetica, sans-serif;
+   padding-left: 10px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+
+ }
+ header{
+   background-color: darkgray;
+   padding: 15px;
+   text-align: center;
+   margin-left: -2%;
+   position: fixed;
+   width: 100vw;
+   z-index: 1;  
+ }
+.max-contain{
+   flex-grow: 1;
+  
+   
+  
+   
+ }
+ 
+ .dicas{
+   width: 400px;
+   height: 600px;
+   border: 1px solid black;
+   position: absolute;
+   left: 520px;
+   top: 87px;
+   padding-left: 10px;
+ }
+ .dicas h1{
+   color: red;
+ }
+
+ textarea{
+ width:390px;
+ font-size: 1em;
+ font-family: Arial, Helvetica, sans-serif;
+ padding-left: 10px;
+ }
+ table{
+   width: 500px;
+   border-collapse: collapse; /* une todsa as celulas dando um efeito de grade*/
+   position:relative;
+   top: 88px;
+   margin-bottom: 100px;
+
+   
+ }
+ caption{
+   background-color: cadetblue;
+   padding: 10px;
+   font-size: 1.3em;
+   font-weight: bolder;
+   border: 1px solid black;
+   border-bottom: none;
+ }
+ tbody tr:nth-child(2n){
+   background-color: rgb(204, 204, 236)
+
+ }
+ td, th{
+   border: 1px solid black;
+   padding: 10px;
+ }
+
+ thead tr th  {
+   position: sticky;
+   top: 66px;
+   background-color:rgb(243, 233, 233) ;
+ }
+ thead, tfoot{
+   background-color: rgb(243, 233, 233);
+   color:black;
+ }
+ img{
+   width: 30px;
+ }
+ a{
+   padding-left: 10px;
+   text-decoration: none;
+ }
+ a:hover{
+   text-decoration: underline;
+ }
+ .pos{
+   text-align: center;
+ }
+ .p{
+   width: 400px;
+
+ }
