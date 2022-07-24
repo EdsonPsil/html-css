@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilizando o colgroup</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+      border-collapse: collapse;
+      width: 500px;
+    }
+     td, th{
+      border:  1px solid black;
+      padding: 10px;
+        }
+    caption{
+      border:  1px  solid black;
+      border-bottom: none;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 2rem;
+      background-color: dimgrey;
+      color: white;
+      
+    }
+    /*=====Primeira forma de configirar as colunas*/
+  .idade, .nacio{
+    background-color: darkseagreen;
+  }
+  .nome, .sexo{
+    background-color: burlywood;
+   
+  }
+
+  /*=====Segunda forma de configirar as colunas*/
+
+  .amarelo{
+    background-color: yellow;
+  }
+
+  .azul{
+    background-color: rgb(30, 33, 197);
+    
+  }
+
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Exercicio de tabelas</caption>
+
+    <!--Primeiro exemplo de configuração das colunas-->
+    <colgroup>
+      <col class="nome" >
+      <col class="idade" span="2"> 
+      <col class="sexo">
+      <col class="nacio">
+    </colgroup>
+
+    <!-- <colgroup>
+      <col class="amarelo" >
+      <col class="azul">
+      <col class="amarelo">
+      <col class="azul">
+    </colgroup> -->
+
+
+
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">idade</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Nacionalidade</th>
+    </tr>
+    <tr>
+      <td>Maria de Sousa</td>
+      <td>24 anos</td>
+      <td>feminino</td>
+      <td>Brasileira</td>
+    </tr>
+    <tr>
+      <td>Ana de Sousa</td>
+      <td>29 anos</td>
+      <td>feminino</td>
+      <td>Brasileira</td>
+    </tr>
+    <tr>
+      <td>Rafael de Sousa</td>
+      <td>21 anos</td>
+      <td>Masculino</td>
+      <td>Brasileira</td>
+    </tr>
+    <tr>
+      <td>Tereza da Silva</td>
+      <td>44 anos</td>
+      <td>feminino</td>
+      <td>Brasileira</td>
+    </tr>
+  </table>
+  
+</body>
+</html>
