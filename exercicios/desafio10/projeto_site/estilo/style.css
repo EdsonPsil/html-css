@@ -42,7 +42,7 @@ body {
   font-family: var(--font-patrao);
 }
 a.externo::after{
-  content: '\00a0\1f517';
+  content: '\00a0\1f517'; /* 00a0 é o espaço sem quebra*/
 }
 
 header {
@@ -177,12 +177,12 @@ aside {
 
 }
 
-aside > h3{
+ a > h3{
   font-family: var(--font-patrao);
   color: white;
   background-color: var(--cor3);
   padding: 10px;
-  margin: -10px -10px 0px -10px;
+  margin: -10px -10px 0px -10px;/* para erredondar a parte de cima do h3*/
   border-radius: 10px 10px 0px 0px;
  
 }
